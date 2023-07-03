@@ -17,6 +17,4 @@ switch(nome) {
 
 if(nome == "Leonardo") {
     console.log("O nome é Leonardo!")
-} else {
-    console.log("O nome não foi encontrado!") 
 }
