@@ -202,3 +202,38 @@ function mediaArr(ar){
 let ar = [1,3,5,7,9,4,2,6,8,90];
 const medAr = mediaArr(ar);
 console.log("media Array: ", medAr);
+
+
+
+const arr = [1, 2, 3, 4]
+let qty = arr.length;
+let el = arr[2];
+console.log(qty);
+console.log(el);
+
+const arrAy = [];
+for(let i = 0; i < 5; i++) {
+  let el = i + 5;
+  arrAy.push(el);
+}
+console.log(arrAy);
+
+
+function findMaxNumber(arr) {
+  if(arr.length === 0) {
+    return null;
+  }
+
+  let max = arr[0];
+
+  for(let i = 0; i < arr.length; i++) {
+    if(arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+
+let nuArray = [5, 8, 2, 10, 3];
+let maiorNum = findMaxNumber(nuArray);
+console.log(maiorNum);
