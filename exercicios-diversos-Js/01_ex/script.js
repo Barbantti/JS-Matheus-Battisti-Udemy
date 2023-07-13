@@ -1,4 +1,4 @@
-console.log("Voce e capaz e mais forte do que parece, stay focused!")
+console.log("Voce e mais forte e capaz do que parece, stay focused!")
 
 function cubo(base,exp){
 
