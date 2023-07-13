@@ -93,16 +93,16 @@ class ContaBancaria {
     this.numeroConta = numeroConta;
     this.saldo = saldo;
   }
-
+  //representando o número da conta.
   numConta() {
     return this.numeroConta;
   }
-
+  //recebe um valor como parâmetro e adiciona esse valor ao saldo da conta.
   depositar(valor) {
     this.saldo += valor; // Somando o valor ao saldo existente
     return this.saldo;
   }
-
+  //recebe um valor como parâmetro e verifica se o saldo é suficiente para efetuar o saque.
   sacar(valor) {
     if (valor > this.saldo || valor <= 0) {
       console.log(`Saldo insuficiente, seu saldo atual é: ${this.saldo}`);
@@ -111,13 +111,13 @@ class ContaBancaria {
       return valor;
     }
   }
-
+  //retorna o saldo atual da conta.
   consultarSaldo() {
     return this.saldo;
   }
 }
 
-// Exemplo de uso
+
 let conta = new ContaBancaria("024.745-6", 0);
 let numeroDaConta = conta.numConta();
 let realizarDeposito = conta.depositar(6600);
